@@ -17,7 +17,7 @@ Ensure VirtualBox is installed and configured for the virtual machines. You can 
 Disable swap to ensure Kubernetes functions correctly.
 
 ```bash
-tswapoff -a
+swapoff -a
 sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
 ```
 
