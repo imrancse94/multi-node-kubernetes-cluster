@@ -352,15 +352,7 @@ sudo systemctl restart containerd && sudo systemctl status containerd
 
 ---
 
-## Step 9: Install Docker
-
-```bash
-sudo apt-get install docker.io -y
-```
-
----
-
-## Step 10: Access Kubernetes Repositories
+## Step 9: Access Kubernetes Repositories
 
 ### Add Kubernetes GPG Key
 
@@ -384,7 +376,7 @@ sudo apt-mark hold kubeadm kubelet kubectl
 
 ---
 
-## Step 11: Initialize the Cluster
+## Step 10: Initialize the Cluster
 
 Pull required container images:
 
@@ -400,7 +392,7 @@ sudo kubeadm init --apiserver-advertise-address <master-ip> --control-plane-endp
 
 ---
 
-## Step 12: Configure Networking with Calico
+## Step 11: Configure Networking with Calico
 
 ### Download and Edit Calico YAML
 
